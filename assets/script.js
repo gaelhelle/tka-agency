@@ -11,4 +11,6 @@ tailwind.config = {
   },
 };
 
-AOS.init();
+AOS.init({
+  once: true,
+});

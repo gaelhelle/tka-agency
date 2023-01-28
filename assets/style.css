@@ -1,10 +1,50 @@
 :root {
-  --bg-color: #212121;
-  --primary-color: #ffea28;
-  --text-color: #ffffff;
-  --text-secondary-color: #acacac;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 [data-aos="fade-up"] {
   transform: translate3d(0, 30px, 0);
+}
+
+[id]::before {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+/* Section */
+.section-title {
+  position: relative;
+}
+
+.section-title:before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+}
+
+.section-title:after {
+  content: url("./images/arrows-title-section.svg");
+  width: 12px;
+  height: 15px;
+  position: absolute;
+  top: -8px;
+  margin-left: 10px;
+}
+
+.section-subtitle:before {
+  display: inline-block;
+  content: "";
+  width: 70px;
+  height: 2px;
+  background: #555555;
+  vertical-align: middle;
+  margin-right: 20px;
 }
