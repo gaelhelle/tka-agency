@@ -1,0 +1,10 @@
+:root {
+  --bg-color: #212121;
+  --primary-color: #ffea28;
+  --text-color: #ffffff;
+  --text-secondary-color: #acacac;
+}
+
+[data-aos="fade-up"] {
+  transform: translate3d(0, 30px, 0);
+}

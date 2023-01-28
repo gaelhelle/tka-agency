@@ -1,0 +1,30 @@
+body {
+  font-family: "Meticula";
+}
+
+@font-face {
+  font-family: "Meticula";
+  src: url("Meticula-Regular.woff2") format("woff2"),
+    url("Meticula-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Meticula";
+  src: url("Meticula-Light.woff2") format("woff2"),
+    url("Meticula-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Meticula";
+  src: url("Meticula-Bold.woff2") format("woff2"),
+    url("Meticula-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
