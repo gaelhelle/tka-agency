@@ -48,3 +48,18 @@ html {
   vertical-align: middle;
   margin-right: 20px;
 }
+
+.button--text .relative {
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 0.25rem;
+  transition: background-size 0.6s ease;
+  background-image: linear-gradient(
+    transparent calc(100% - 1px),
+    currentColor 1px
+  );
+}
+
+.button--text:hover .relative {
+  background-size: 100% 100%;
+}

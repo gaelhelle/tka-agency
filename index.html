@@ -14,37 +14,94 @@
   </head>
   <body class="m-h-full bg-brand-bg text-white">
     <header class="sticky top-0 bg-brand-bg z-10">
-      <div class="container mx-auto max-w-[1200px]" data-aos="fade-up">
-        <div class="flex items-center justify-between py-8">
-          <a href="">
-            <img src="./assets/images/tka-logo.svg" width="100" />
+      <div class="container px-6 mx-auto max-w-[1200px]" data-aos="fade-up">
+        <div class="flex items-center justify-between py-2 md:py-8">
+          <a href="/" class="w-[50px] md:w-[50px]">
+            <img src="./assets/images/tka-logo.svg" />
           </a>
-          <nav>
-            <ul class="flex items-center gap-4 text-sm">
-              <li>
-                <a
-                  href="#our-talents"
-                  class="px-5 py-4 hover:bg-gray-500/10 hover:rounded transition"
-                  >Talents</a
+          <div>
+            <div class="md:hidden text-brand-primary p-4">
+              <button
+                data-collapse-toggle="navbar-default"
+                type="button"
+                class="inline-flex items-center p-2 text-sm text-brand-primary rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:text-gray-500"
+                aria-controls="navbar-default"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="w-6 h-6"
+                  aria-hidden="true"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-              </li>
-              <li>
-                <a
-                  href="#about-us"
-                  class="px-5 py-4 hover:bg-gray-500/10 hover:rounded transition"
-                  >About us</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact-us"
-                  class="px-5 py-4 hover:bg-gray-500/10 hover:rounded transition"
-                  >Contact us</a
-                >
-              </li>
-            </ul>
-          </nav>
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <nav class="hidden md:block">
+              <ul class="flex items-center gap-4 text-sm">
+                <li>
+                  <a
+                    href="#our-talents"
+                    class="px-4 py-3 hover:text-brand-primary transition button--text"
+                  >
+                    <span class="relative">Our Talents</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about-us"
+                    class="px-4 py-3 hover:text-brand-primary transition button--text"
+                  >
+                    <span class="relative">About us</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact-us"
+                    class="px-4 py-3 hover:text-brand-primary transition button--text"
+                  >
+                    <span class="relative">Contact us</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
+      <div class="hidden" id="navbar-default">
+        <ul class="flex flex-col p-4 bg-brand-primary">
+          <li>
+            <a
+              data-collapse-toggle="navbar-default"
+              href="#our-talents"
+              class="block px-3 py-4 text-brand-bg font-bold"
+              >Our Talents</a
+            >
+          </li>
+          <li>
+            <a
+              data-collapse-toggle="navbar-default"
+              href="#about-us"
+              class="block px-3 py-4 text-brand-bg font-bold"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              data-collapse-toggle="navbar-default"
+              href="#contact-us"
+              class="block px-3 py-4 text-brand-bg font-bold"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -55,7 +112,7 @@
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div class="container mx-auto max-w-[1200px]">
+            <div class="container px-6 mx-auto max-w-[1200px]">
               <h2 class="uppercase text-brand-primary mb-4 text-xs">
                 Take control of your career
               </h2>
@@ -82,23 +139,23 @@
       </section>
 
       <section id="our-talents" data-aos="fade-up" data-aos-delay="200">
-        <div class="container mx-auto max-w-[1200px] py-32">
-          <div class="flex flex-row justify-between">
+        <div class="container px-6 mx-auto max-w-[1200px] py-20 lg:py-32">
+          <div class="flex flex-col lg:flex-row justify-between">
             <h2
-              class="section-title before:bg-brand-primary text-4xl font-bold uppercase"
+              class="section-title before:bg-brand-primary text-4xl font-bold uppercase max-lg:text-center max-lg:mb-20"
             >
               Our Talents
             </h2>
-            <div class="relative -top-10 flex-1">
-              <div class="flex flex-row gap-20 justify-center">
-                <div class="text-center">
+            <div class="relativelg:-top-10 flex-1">
+              <div class="flex flex-col lg:flex-row gap-20 justify-center">
+                <div class="text-center justify-center">
                   <div
-                    class="relative bg-gradient-to-b from-[#151515] rounded-full w-[200px] h-[200px]"
+                    class="relative bg-gradient-to-b from-[#151515] rounded-full w-[200px] h-[200px] mx-auto"
                   >
                     <img
                       alt="Nabil Fekir"
                       src="./assets/images/talents/Nabil-Fekir.png"
-                      class="mx-auto absolute bottom-0"
+                      class="absolute bottom-0"
                     />
                   </div>
                   <h4
@@ -113,12 +170,12 @@
                 </div>
                 <div class="text-center">
                   <div
-                    class="relative bg-gradient-to-b from-[#151515] rounded-full w-[200px] h-[200px]"
+                    class="relative bg-gradient-to-b from-[#151515] rounded-full w-[200px] h-[200px] mx-auto"
                   >
                     <img
                       alt="Nabil Fekir"
                       src="./assets/images/talents/empty.png"
-                      class="mx-auto absolute bottom-0"
+                      class="absolute bottom-0"
                     />
                   </div>
                   <div class="mt-5 transition-all hover:mt-4 inline-block">
@@ -136,10 +193,10 @@
       </section>
 
       <section id="about-us" data-aos="fade-up" data-aos-delay="300">
-        <div class="container mx-auto max-w-[1200px] py-32">
-          <div class="flex flex-row justify-between gap-20">
+        <div class="container px-6 mx-auto max-w-[1200px] py-20 lg:py-32">
+          <div class="flex flex-col lg:flex-row justify-between lg:gap-20">
             <h2
-              class="section-title before:bg-brand-primary text-4xl font-bold uppercase"
+              class="section-title before:bg-brand-primary text-4xl font-bold uppercase max-lg:text-center max-lg:mb-20"
             >
               About Us
             </h2>
@@ -148,7 +205,7 @@
                 class="text-sm text-brand-text-secondary mx-auto max-w-[800px] [&>p]:mb-4"
               >
                 <p>
-                  TKA has been build from a constatation : many times, players
+                  TKA has been build from a constatation: many times, players
                   and clubs agree on everything but interferences can break a
                   deal at the final stage. Some involved intermediaries are
                   trying to reach their interest and not the player or club one.
@@ -170,12 +227,16 @@
             </div>
           </div>
           <div>
-            <div class="mt-20">
+            <div class="mt-20" data-aos="fade-up" data-aos-delay="400">
               <h3 class="section-subtitle text-brand-text-secondary">
                 Our Services
               </h3>
-              <div class="mt-20 grid grid-cols-4 grid-flow-col gap-20">
-                <div>
+              <div
+                class="mt-20 grid lg:grid-cols-4 grid-cols-2 gap-3 md:gap-10 lg:gap-20"
+              >
+                <div
+                  class="max-lg:bg-neutral-700/30 max-lg:rounded-2xl p-5 md:p-8 lg:p-0"
+                >
                   <svg
                     width="700pt"
                     height="700pt"
@@ -220,7 +281,9 @@
                     the deal right for all. TKA agent is a facilitator.
                   </p>
                 </div>
-                <div>
+                <div
+                  class="max-lg:bg-neutral-700/30 max-lg:rounded-2xl p-5 md:p-8 lg:p-0"
+                >
                   <svg
                     width="700pt"
                     height="700pt"
@@ -243,7 +306,9 @@
                     countries
                   </p>
                 </div>
-                <div>
+                <div
+                  class="max-lg:bg-neutral-700/30 max-lg:rounded-2xl p-5 md:p-8 lg:p-0"
+                >
                   <svg
                     width="700pt"
                     height="700pt"
@@ -265,7 +330,9 @@
                     needed to save the hard work and (missing stuff here??)
                   </p>
                 </div>
-                <div>
+                <div
+                  class="max-lg:bg-neutral-700/30 max-lg:rounded-2xl p-5 md:p-8 lg:p-0"
+                >
                   <svg
                     width="700pt"
                     height="700pt"
@@ -290,30 +357,32 @@
                 </div>
               </div>
             </div>
-            <div class="mt-56">
+            <div class="mt-20 lg:mt-56" data-aos="fade-up" data-aos-delay="500">
               <h3 class="section-subtitle text-brand-text-secondary">
                 Our Ethic
               </h3>
-              <div class="mt-20 grid grid-cols-4 grid-flow-col gap-20">
-                <div>
+              <div
+                class="mt-20 grid lg:grid-cols-4 grid-cols-2 gap-10 lg:gap-20"
+              >
+                <div class="flex flex-col">
                   <h3 class="font-bold text-lg mb-4">Transparency</h3>
                   <p class="text-sm text-brand-text-secondary">
                     since the beginning
                   </p>
                 </div>
-                <div>
+                <div class="flex flex-col">
                   <h3 class="font-bold text-lg mb-4">No lie</h3>
                   <p class="text-sm text-brand-text-secondary">
                     to the player and club
                   </p>
                 </div>
-                <div>
+                <div class="flex flex-col">
                   <h3 class="font-bold text-lg mb-4">Sport first</h3>
                   <p class="text-sm text-brand-text-secondary">
                     We facilitate the deals for everyone
                   </p>
                 </div>
-                <div>
+                <div class="flex flex-col">
                   <h3 class="font-bold text-lg mb-4">Fair commission</h3>
                   <p class="text-sm text-brand-text-secondary">
                     Our rate is the fairest in the market
@@ -324,7 +393,101 @@
           </div>
         </div>
       </section>
+
+      <section id="contact-us" data-aos="fade-up" data-aos-delay="300">
+        <div class="container px-6 mx-auto max-w-[1200px] py-20 lg:py-32">
+          <div class="flex flex-col lg:flex-row justify-between lg:gap-32">
+            <div>
+              <h2
+                class="section-title before:bg-brand-primary text-4xl font-bold uppercase max-lg:text-center max-lg:mb-20"
+              >
+                Contact Us
+              </h2>
+              <div
+                class="mt-10 text-sm text-brand-text-secondary mx-auto max-w-[400px] [&>p]:mb-4"
+              >
+                <p>
+                  You are interested by one of TKA talent or want to know more
+                  about our way to work?
+                </p>
+                <p>Contact us filling this form we will contact you back:</p>
+              </div>
+            </div>
+
+            <div class="relative flex-1">
+              <form class="flex flex-col gap-6 max-w-[500px] relative">
+                <div
+                  class="absolute top-0 left-0 w-full h-full z-10 flex items-center justify-center"
+                >
+                  <div
+                    class="rounded bg-brand-bg px-6 py-4 relative -top-10 shadow-2xl"
+                  >
+                    Temporary unavailable
+                  </div>
+                </div>
+                <div class="flex blur-sm flex-col gap-6">
+                  <div class="flex gap-10 items-center">
+                    <label class="w-24"
+                      >Name<sup class="text-brand-primary">*</sup></label
+                    >
+                    <input
+                      placeholder="Your Name"
+                      class="bg-black/20 rounded-lg p-4 px-6 text-sm flex-1"
+                    />
+                  </div>
+                  <div class="flex gap-10 items-center">
+                    <label class="w-24"
+                      >Phone<sup class="text-brand-primary">*</sup></label
+                    >
+                    <input
+                      placeholder="Your Phone"
+                      class="bg-black/20 rounded-lg p-4 px-6 text-sm flex-1"
+                    />
+                  </div>
+                  <div class="flex gap-10 items-center">
+                    <label class="w-24"
+                      >Email<sup class="text-brand-primary">*</sup></label
+                    >
+                    <input
+                      placeholder="Your Email"
+                      class="bg-black/20 rounded-lg p-4 px-6 text-sm flex-1"
+                    />
+                  </div>
+                  <div class="flex gap-10 items-center">
+                    <label class="w-24"
+                      >Message<sup class="text-brand-primary">*</sup></label
+                    >
+                    <textarea
+                      placeholder="Your Message"
+                      class="bg-black/20 rounded-lg p-4 px-6 text-sm flex-1"
+                    ></textarea>
+                  </div>
+                  <div
+                    class="mt-5 transition-all hover:mt-4 self-end w-full max-w-[200px]"
+                  >
+                    <button
+                      class="rounded-full bg-brand-primary text-brand-bg px-6 py-3 text-sm font-bold shadow-lg shadow-brand-primary/20 w-full disabled:bg-gray-500 disabled:shadow-none"
+                      disabled
+                    >
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="mt-32">
+      <div class="container px-6 mx-auto max-w-[1200px]" data-aos="fade-up">
+        <div class="border-t border-gray-500/20 py-10">
+          <a href="/" class="text-brand-primary button--text">
+            <span class="relative">tka-agency</span></a
+          >
+        </div>
+      </div>
+    </footer>
     <script src="./assets/script.js"></script>
   </body>
 </html>

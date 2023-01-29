@@ -14,3 +14,14 @@ tailwind.config = {
 AOS.init({
   once: true,
 });
+
+const toggleButtons = document.querySelectorAll("[data-collapse-toggle]");
+
+for (const button of toggleButtons) {
+  const handleCollapse = (button) => {
+    document
+      .getElementById(button.currentTarget.dataset.collapseToggle)
+      .classList.toggle("hidden");
+  };
+  button.addEventListener("click", handleCollapse);
+}
